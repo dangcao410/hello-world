@@ -803,6 +803,239 @@ Transcript show: 'Hello world'.
 SNOBOL
 -----
 ```snobol
-  OUTPUT = 'Hello world'
- END
+OUTPUT = 'Hello world'
+END
+```
+
+Speakeasy
+-----
+```speakeasy
+program hello
+    "Hello world"
+ end
+```
+
+SQL
+-----
+```sql
+SELECT   'Hello world'   FROM  DUMMY;  -- DUMMY is a standard table in SAP HANA. 
+SELECT   'Hello world'   FROM  DUAL;  -- DUAL is a standard table in Oracle. 
+SELECT   'Hello world'   -- Works for SQL Server, Microsoft Access, PostgreSQL and MySQL. 
+```
+
+Stata
+-----
+```stata
+display  "Hello world" 
+```
+
+SuperCollider
+-----
+```supercollider
+"Hello world".postln;
+```
+
+Swift
+-----
+```swift
+println("Hello World")
+```
+
+Tcl
+-----
+```tcl
+puts "Hello world"
+```
+
+TeX
+-----
+```tex
+Hello world
+\bye
+```
+
+TI-BASIC
+-----
+```tibasic
+Disp "HELLO WORLD"
+```
+
+Unlambda
+-----
+```unlambda
+`r```````````.H.e.l.l.o. .w.o.r.l.di
+```
+
+Vala
+-----
+```vala
+class Sample : Object {
+    void greeting () {
+        stdout.printf ("Hello World\n");
+    }
+
+    static void main (string[] args) {
+        var sample = new Sample ();
+        sample.greeting ();
+    }
+}
+```
+
+Verilog
+-----
+```verilog
+module  hello ( ) ; 
+  
+  initial   begin 
+  
+ 	 $display ( "Hello world" ) ; 
+          $finish ; 
+  end 
+  
+  endmodule
+```
+
+VHDL
+-----
+```vhdl
+entity  hello_world  is 
+  end ; 
+  
+  architecture  hello_world  of  hello_world  is 
+  begin 
+   stimulus  :   PROCESS 
+    begin 
+      assert  false  report   "Hello world" 
+      severity  note ; 
+      wait ; 
+    end   PROCESS  stimulus ; 
+  end  hello_world ; 
+```
+
+Visual Basic
+-----
+```visualbasic
+Class MainForm
+    Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        MessageBox.Show("Hello world")
+    End Sub
+End Class
+```
+
+Whitespace
+-----
+```whitespace
+S   S   S   T 	 S   S   T 	 S   S   S   L
+T 	L
+S   S   S   S   S   T 	 T 	 S   S   T 	 S   T 	 L
+T 	L
+S   S   S   S   S   T 	 T 	 S   T 	 T 	 S   S   L
+T 	L
+S   S   S   S   S   T 	 T 	 S   T 	 T 	 S   S   L
+T 	L
+S   S   S   S   S   T 	 T 	 S   T 	 T 	 T 	 T 	 L
+T 	L
+S   S   S   S   S   T 	 S   T 	 T 	 S   S   L
+T 	L
+S   S   S   S   S   T 	 S   S   S   S   S   L
+T 	L
+S   S   S   S   S   T 	 T 	 T 	 S   T 	 T 	 T 	 L
+T 	L
+S   S   S   S   S   T 	 T 	 S   T 	 T 	 T 	 T 	 L
+T 	L
+S   S   S   S   S   T 	 T 	 T 	 S   S   T 	 S   L
+T 	L
+S   S   S   S   S   T 	 T 	 S   T 	 T 	 S   S   L
+T 	L
+S   S   S   S   S   T 	 T 	 S   S   T 	 S   S   L
+T 	L
+S   S   S   S   S   T 	 S   S   S   S   T 	 L
+T 	L
+S   S   L
+L
+L
+```
+
+x86
+-----
+```x86
+; 32 bit nasm style x86 assembly
+; build command:
+; 		nasm -f elf -F stabs x86.asm
+;			ld -o x86 x86.o
+
+section .data
+str:		db 'Hello World', 0Ah
+str_len equ $ - str
+
+section .text
+global _start
+
+_start:
+				mov		eax, 4
+				mov		ebx, 1
+
+				mov		ecx, str
+				mov		edx, str_len
+				int		80h
+
+				mov		eax, 1
+				mov		ebx, 0
+				int		80h
+```
+
+XPath 2.0
+-----
+```xpath2
+trace(for $i in ("hello", "world")["&"] return for $j in ($i, " ") return $j, "")
+```
+
+XQuery
+-----
+```xquery
+concat(
+  string-join(
+    for $i in
+      <_>
+        <Hello/>
+        <World/>
+      </_>/*/name()
+    order by $i ascending
+    return $i,
+    " "
+  )
+)
+```
+
+XSLT
+-----
+```xslt
+<?xml version='1.0'  encoding="ISO-8859-1"?>
+ <xsl:stylesheet xmlns:xsl='http://www.w3.org/1999/XSL/Transform' version='1.0' >
+   <xsl:output method="text"/>
+   <xsl:template match="/">
+     <xsl:text>Hello World
+ </xsl:text>
+   </xsl:template>
+ </xsl:stylesheet>
+```
+
+Xtend
+-----
+```xtend
+package sample
+
+import java.util.List
+
+class Greeter {
+  def greetThem(List<String> names) {
+    for(name: names) {
+      println(name.sayHello)
+    }
+  }
+
+  def sayHello(String name) {
+    'Hello ' + name
+  }
+}
 ```
