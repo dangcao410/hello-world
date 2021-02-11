@@ -25,7 +25,7 @@ Algol
 BEGIN
 FILE F (KIND=REMOTE);
 EBCDIC ARRAY E [0:11];
-REPLACE E BY "HELLO WORLD!";
+REPLACE E BY "HELLO WORLD";
 WHILE TRUE DO
   BEGIN
   WRITE (F, *, E);
@@ -37,8 +37,39 @@ Amiga E
 -----
 ```amiga_e
 PROC main()
-    WriteF('Hello, world!\n')
+    WriteF('Hello, world\n')
 ENDPROC
+```
+
+Apl
+-----
+```apl
+'Hello, world'
+```
+
+Applescript
+-----
+```applescript
+display dialog "Hello, world"
+```
+
+Arc
+-----
+```arc
+(prn "Hello, World")
+```
+
+AutoIt
+-----
+```autoit
+MsgBox( 0, "Hello World", "Hello, world" )
+Exit
+```
+
+Awk
+-----
+```awk
+BEGIN { print "Hello, world" }
 ```
 
 Bash
