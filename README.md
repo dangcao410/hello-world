@@ -33,6 +33,14 @@ WHILE TRUE DO
 END.
 ```
 
+Amiga E
+-----
+```amiga_e
+PROC main()
+    WriteF('Hello, world!\n')
+ENDPROC
+```
+
 Bash
 -----
 ```bash
