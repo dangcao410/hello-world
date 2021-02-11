@@ -1,6 +1,5 @@
 ![poster](img/hello-world.jpg)
 
-
 Abap
 -----
 ```abap
