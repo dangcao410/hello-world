@@ -440,10 +440,105 @@ Hello world
 \end{document}
 ```
 
+LiveScript
+-----
+```livescript
+console.log "Hello world"
+```
+
+Logo
+-----
+```logo
+print   [ Hello  world ] 
+```
+
+Logtalk
+-----
+```logtalk
+?- write('Hello world'), nl.
+Hello world
+true.
+```
+
+LOLCODE
+-----
+```lolcode
+HAI
+CAN HAS STDIO?
+VISIBLE "HAI WORLD"
+KTHXBYE
+```
+
 Lua
 -----
 ```lua
 print("Hello World")
+```
+
+m4
+-----
+```m4
+Hello world
+```
+
+Magic
+-----
+```magic
+HELLO.WORLD
+
+"Hello world"^#;
+```
+
+Mathematica
+-----
+```mathematica
+Print [ "Hello world" ] 
+```
+
+MATLAB
+-----
+```matlab
+classdef hello
+    methods
+        function doit(this)
+            disp('Hello world')
+        end
+    end
+end
+```
+
+Modula-2
+-----
+```modula2
+MODULE HelloWorld;
+FROM STextIO IMPORT WriteString;
+BEGIN
+  WriteString("Hello world");
+END HelloWorld.
+```
+
+Nemerle
+-----
+```nemerle
+class Hello
+{
+  static Main () : void
+  {
+    System.Console.WriteLine ("Hello world");
+  }
+}
+```
+
+Objective-C
+-----
+```cbjectivec
+#import <Foundation/Foundation.h>
+
+int main (int argc, const char * argv[])
+{
+        NSLog (@"Hello World");
+        return 0;
+}
 ```
 
 Ocaml
@@ -453,12 +548,48 @@ open Printf;;
 Printf.printf "Hello World\n";;
 ```
 
+Pascal
+-----
+```pascal
+program HelloWorld(output);
+begin
+  WriteLn('Hello world')
+end.
+```
+
 Perl
 -----
 ```perl
 #!/usr/bin/perl
 
 print "Hello World\n"
+```
+
+PHP
+-----
+```php
+<?php
+    print 'Hello world';
+?>
+```
+
+PL/SQL
+-----
+```pl-sql
+SET  SERVEROUTPUT  ON ; 
+  BEGIN 
+      DBMS_OUTPUT . PUT_LINE ( 'Hello world' ) ; 
+  END ; 
+```
+
+PostScript
+-----
+```postscript
+%!
+/Times-Roman 12 selectfont
+20 20 moveto
+(Hello world) show
+showpage
 ```
 
 Powershell
@@ -484,6 +615,14 @@ Prolog
 main :- writef("%s\n", ["Hello World"]).
 ```
 
+Pure
+-----
+```pure
+extern int puts(char*);
+hello = puts "Hello world";
+hello;
+```
+
 Python
 -----
 ```python
@@ -493,10 +632,36 @@ if __name__ == '__main__':
     print("Hello World")
 ```
 
+QBasic
+-----
+```qbasic
+PRINT "Hello World"
+```
+
 R
 -----
 ```r
 print("Hello World")
+```
+
+Racket
+-----
+```racket
+#lang racket
+
+(displayln "Hello world")
+```
+
+Rebol
+-----
+```rebol
+view layout [text "Hello world" button "Quit" [quit]]
+```
+
+Rexx
+-----
+```rexx
+say "Hello world"
 ```
 
 Ruby
@@ -515,10 +680,129 @@ fn main() {
 }
 ```
 
+Scala
+-----
+```scala
+object HelloWorld extends App {
+  println("Hello world")
+}
+```
+
+Scheme
+-----
+```scheme
+(let ((hello0 (lambda() (display "Hello world") (newline))))
+  (hello0))
+```
+
 Scm_Chicken
 -----
 ```SCM_Chicken
 (print "Hello World");
 ```
 
+Shakespeare
+-----
+```shakespeare
+Romeo, a young man with a remarkable patience.
+Juliet, a likewise young woman of remarkable grace.
+Ophelia, a remarkable woman much in dispute with Hamlet.
+Hamlet, the flatterer of Andersen Insulting A/S.
 
+                   Act I: Hamlet's insults and flattery.
+                   Scene I: The insulting of Romeo.
+[Enter Hamlet and Romeo]
+Hamlet:
+You lying stupid fatherless big smelly half-witted coward! You are as
+stupid as the difference between a handsome rich brave hero and thyself!
+Speak your mind!
+You are as brave as the sum of your fat little stuffed misused dusty
+old rotten codpiece and a beautiful fair warm peaceful sunny summer's
+day. You are as healthy as the difference between the sum of the
+sweetest reddest rose and my father and yourself! Speak your mind!
+You are as cowardly as the sum of yourself and the difference
+between a big mighty proud kingdom and a horse. Speak your mind.
+Speak your mind!
+[Exit Romeo]
+                   Scene II: The praising of Juliet.
+[Enter Juliet]
+Hamlet:
+Thou art as sweet as the sum of the sum of Romeo and his horse and his
+black cat! Speak thy mind!
+[Exit Juliet]
+                   Scene III: The praising of Ophelia.
+[Enter Ophelia]
+Hamlet:
+Thou art as lovely as the product of a large rural town and my amazing
+bottomless embroidered purse. Speak thy mind!
+Thou art as loving as the product of the bluest clearest sweetest sky
+and the sum of a squirrel and a white horse. Thou art as beautiful as
+the difference between Juliet and thyself. Speak thy mind!
+[Exeunt Ophelia and Hamlet]
+
+                   Act II: Behind Hamlet's back.
+                   Scene I: Romeo and Juliet's conversation.
+[Enter Romeo and Juliet]
+Romeo:
+Speak your mind. You are as worried as the sum of yourself and the
+difference between my small smooth hamster and my nose. Speak your
+mind!
+Juliet:
+Speak YOUR mind! You are as bad as Hamlet! You are as small as the
+difference between the square of the difference between my little pony
+and your big hairy hound and the cube of your sorry little
+codpiece. Speak your mind!
+[Exit Romeo]
+                   Scene II: Juliet and Ophelia's conversation.
+[Enter Ophelia]
+Juliet:
+Thou art as good as the quotient between Romeo and the sum of a small
+furry animal and a leech. Speak your mind!
+Ophelia:
+Thou art as disgusting as the quotient between Romeo and twice the
+difference between a mistletoe and an oozing infected blister! Speak
+your mind!
+[Exeunt]
+```
+
+Shellcode
+-----
+```shellcode
+\xe9\x1e\x00\x00\x00  //          jmp    8048083 <MESSAGE>
+\xb8\x04\x00\x00\x00  //          mov    $0x4,%eax
+\xbb\x01\x00\x00\x00  //          mov    $0x1,%ebx
+\x59                  //          pop    %ecx
+\xba\x0f\x00\x00\x00  //          mov    $0xf,%edx
+\xcd\x80              //          int    $0x80
+\xb8\x01\x00\x00\x00  //          mov    $0x1,%eax
+\xbb\x00\x00\x00\x00  //          mov    $0x0,%ebx
+\xcd\x80              //          int    $0x80
+\xe8\xdd\xff\xff\xff  //          call   8048065 <GOBACK>
+\x48\x65\x6c\x6c\x6f\x2c\x20  //  "Hello, "
+\x57\x6f\x72\x6c\x64\x21\x0d\x0a//"World\r\n"
+```
+
+Shell
+-----
+```shell
+echo "Hello world"
+```
+
+Small Basic
+-----
+```smallbasic
+TextWindow.WriteLine ( "Hello World" ) 
+```
+
+Smalltalk
+-----
+```smalltalk
+Transcript show: 'Hello world'.
+```
+
+SNOBOL
+-----
+```snobol
+  OUTPUT = 'Hello world'
+ END
+```
